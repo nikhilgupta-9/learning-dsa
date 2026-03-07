@@ -6,6 +6,10 @@
     <title>Learn Traversing</title>
 </head>
 <body>
+ 
+    <input id="elementName" placeholder="enter text or number">
+    <button onclick="getdata()">Submit</button>
+
     <script>
         let data = [12,10,4,5,8,122,32,65,63];
 
@@ -14,12 +18,26 @@
         for(let j = 0; data[j] !== undefined; j++){
             count_name++;
         }
-        console.log(count_name);
+        document.write(`Total Number - ${count_name} <br> <br>`);
 
         for(let i = 0; i < count_name; i++){
         document.write(`${data[i]} <br>`);
         }
        
+        function getdata(){
+            let el = document.getElementById("elementName").value;
+            let nameNumber = 0;
+
+            if(isNaN(el)){
+               for(let k = 0; k < el.length; k++){
+                nameNumber++;
+               }
+               alert(`This is string and it have ${nameNumber} letter`)
+            }else{
+
+                alert(`your element is ${data[el]}`);
+            }
+        }
        
     </script>
 </body>
