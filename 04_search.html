@@ -47,20 +47,67 @@
 
       // Question 2-  Write a program to find the position of a given number in an array using a loop.
 
-      array = [10, 25, 33, 47, 59];
-      search = 23;
-      let found;
+      // array = [10, 25, 33, 47, 59];
+      // search = 33;
+      // let found;
 
-      for(let j = 0; j < array.length; j++){
-        if(array[j] === search){
-            console.log("element posision is :" , j);
-            found = ture;
-            break;
+      // for(let j = 0; j < array.length; j++){
+      //   if(array[j] === search){
+      //       console.log("element posision is :" + j);
+      //       found = ture;
+      //       break;
+      //   }
+      // }
+
+      // if(!found){
+      //   console.log("the element not found in the arrya");
+      // }
+    </script>
+
+    <!-- <script>
+      let myarray = [10,20,30,40,50,60];
+      let check = 40;
+      let found = false;
+
+      for(let i = 0; i < myarray.length; i++){
+        if(myarray[i] == check){
+          console.log("we find your number on "+ i + "rd place");
+          found = true;
+          break;
         }
       }
 
       if(!found){
-        console.log("the element not found in the arrya");
+      console.log("number is not found")
+      }
+    </script> -->
+
+
+    <script>
+      // Return first index of element
+
+      // let input = [1,2,3,2,4];
+      // let  target = 2 ;
+
+      // for(let i = 0; i < input.length; i++){
+
+      //   if(input[i] === target){
+      //     console.log('we find on index of ' + i);
+      //     break;
+      //   }
+      // }
+
+
+      // Find Last Occurrence
+
+      let input = [1,2,3,3,2,4];
+      let  target = 3 ;
+
+      for(let i = input.length -1; i >= 0; i--){
+        if(input[i] === target){
+           console.log('we find on index of ' + i);
+          break;
+        }
       }
     </script>
 
